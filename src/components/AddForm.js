@@ -7,15 +7,15 @@ const AddForm = ( {cocktails, setCocktails} ) => {
   const [newCocktailImage, setNewCocktailImage] = useState("");
   const [newCocktailGlass, setNewCocktailGlass] = useState("");
 
-  //Handler Change Functions-----------
+  //Handler Change Functions
 
   function handleNameChange(event) {
     setNewCocktailName(event.target.value);
   };
 
-//   function handleCategoryChange(event) {
-//     setNewCocktailCategory(event.target.value);
-//   };
+  function handleCategoryChange(event) {
+    setNewCocktailCategory(event.target.value);
+  };
 
 //   function handleImageChange(event) {
 //     setNewCocktailImage(event.target.value);
