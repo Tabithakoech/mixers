@@ -1,24 +1,24 @@
-// import React from 'react';
-// import { Card, Button } from "react-bootstrap";
+import React from 'react';
+import { Card, Button } from "react-bootstrap";
 
 
-// const CocktailCard = ( {cocktail, deleteCocktailCard, eachReview} ) => {
-//   const {id, cocktail_name, category, image, glass} = cocktail;
+const CocktailCard = ( {cocktail, deleteCocktailCard, eachReview} ) => {
+  const {id, cocktail_name, category, image, glass} = cocktail;
   
-//  //console.log(eachReview)
+ //console.log(eachReview)
 
-// //  let score = eachReview.map(obj=>{
-// //    return (
-// //      <div key={obj.id}>{obj.score} out of 10</div>
-    
-// //    )
-// //  })
-
-//  let comment = eachReview.map(obj=>{
+//  let score = eachReview.map(obj=>{
 //    return (
-//     <li key={obj.id}>{obj.comment}</li>
+//      <div key={obj.id}>{obj.score} out of 10</div>
+    
 //    )
 //  })
+
+ let comment = eachReview.map(obj=>{
+   return (
+    <li key={obj.id}>{obj.comment}</li>
+   )
+ })
 
 
 
