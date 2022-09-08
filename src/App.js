@@ -20,16 +20,16 @@ useEffect(() => {
       setCocktails(cocktailsData)
     })
 
-// //get all reviews
+//get all reviews
 
-//   fetch('http://localhost:9292/reviews')
-//     .then(response => response.json())
-//     .then(reviewsData => {  //console.log(reviewsData)
-//       setReviews(reviewsData)
-//       //console.log(reviewsData)
-//     })
+  fetch('http://localhost:9292/reviews')
+    .then(response => response.json())
+    .then(reviewsData => {  //console.log(reviewsData)
+      setReviews(reviewsData)
+      //console.log(reviewsData)
+    })
 
-// }, [])
+}, [])
 // //Delete Cocktail Card
 
 //   function deleteCocktailCard(id) {
