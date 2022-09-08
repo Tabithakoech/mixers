@@ -1,4 +1,4 @@
-/* body {
+body {
   height: 100%;
   background-image: linear-gradient(gray, blue);
   background-repeat: no-repeat;
@@ -28,4 +28,4 @@ input {
 
 .card {
   margin: 5px;
-} */
+}
