@@ -1,13 +1,13 @@
-// import React, { useEffect, useState } from "react";
-// import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
-// import './App.css';
-// import NavBar from "./components/NavBar";
-// import MainContainer from "./components/MainContainer";
-// import MyCocktails from "./components/MyCocktails";
+import React, { useEffect, useState } from "react";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import './App.css';
+import NavBar from "./components/NavBar";
+import MainContainer from "./components/MainContainer";
+import MyCocktails from "./components/MyCocktails";
 
-// const App = () => {
-//   const [cocktails, setCocktails] = useState([]);
-//   const [reviews, setReviews] = useState([]);
+const App = () => {
+  const [cocktails, setCocktails] = useState([]);
+  const [reviews, setReviews] = useState([]);
 
   
 // useEffect(() => {
