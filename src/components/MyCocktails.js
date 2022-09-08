@@ -1,11 +1,11 @@
-// import React from "react";
+import React from "react";
 
 
-// const MyCocktails = () => {
+const MyCocktails = () => {
 
-//     return (
-//        <></>
-//     );
-// };
+    return (
+       <></>
+    );
+};
 
-// export default MyCocktails;
+export default MyCocktails;
