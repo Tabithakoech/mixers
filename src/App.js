@@ -30,18 +30,18 @@ useEffect(() => {
     })
 
 }, [])
-// //Delete Cocktail Card
+//Delete Cocktail Card
 
-//   function deleteCocktailCard(id) {
-//     fetch(`http://localhost:9292/cocktails/${id}`, {
-//       method: "DELETE",
-//       headers: {'Accept': 'application/json'}
-//     })
-//     .then(()=> {
-//       let updatedCocktailsArray = cocktails.filter(cocktail => cocktail.id !== id)
-//       setCocktails(updatedCocktailsArray)
-//     })
-//   };
+  function deleteCocktailCard(id) {
+    fetch(`http://localhost:9292/cocktails/${id}`, {
+      method: "DELETE",
+      headers: {'Accept': 'application/json'}
+    })
+    .then(()=> {
+      let updatedCocktailsArray = cocktails.filter(cocktail => cocktail.id !== id)
+      setCocktails(updatedCocktailsArray)
+    })
+  };
 
 
 
