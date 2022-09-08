@@ -36,43 +36,43 @@ const AddForm = ( {cocktails, setCocktails} ) => {
       newCocktailImage,
       newCocktailGlass };
 
-// console.log(newCocktail) //!-----WORKS!
+console.log(newCocktail) //!-----WORKS!
 
-//     fetch("http://localhost:9292/cocktails", {
-//       method: "POST",
-//       headers: {"Content-type": "application/json"},
-//       body: JSON.stringify({
-//         name: newCocktailName,
-//         category: newCocktailCategory,
-//         image: newCocktailImage,
-//         glass: newCocktailGlass
-//       })
-//     })
-//     .then(response => response.json())
-//     .then(newCocktail => {
-// console.log(newCocktail)  
-//       const addedCocktail = [newCocktail, ...cocktails]
+    fetch("http://localhost:9292/cocktails", {
+      method: "POST",
+      headers: {"Content-type": "application/json"},
+      body: JSON.stringify({
+        name: newCocktailName,
+        category: newCocktailCategory,
+        image: newCocktailImage,
+        glass: newCocktailGlass
+      })
+    })
+    .then(response => response.json())
+    .then(newCocktail => {
+console.log(newCocktail)  
+      const addedCocktail = [newCocktail, ...cocktails]
 
-//       setCocktails(addedCocktail);
-// //console.log(addedCocktail)
+      setCocktails(addedCocktail);
+//console.log(addedCocktail)
 
-//       setNewCocktailName("");
-//       setNewCocktailCategory("");
-//       setNewCocktailImage("");
-//       setNewCocktailGlass("");
-//     })
-//   }
+      setNewCocktailName("");
+      setNewCocktailCategory("");
+      setNewCocktailImage("");
+      setNewCocktailGlass("");
+    })
+  }
 
 
-//     return(
-//         <form onSubmit={handleSubmit}>
-//           <input type="text" placeholder="New Cocktail Name..." value={newCocktailName} onChange={handleNameChange}></input>
-//           <input type="text" placeholder="New Cocktail Category..." value={newCocktailCategory} onChange={handleCategoryChange}></input>
-//           <input type="text" placeholder="New Cocktail Image..." value={newCocktailImage} onChange={handleImageChange}></input>
-//           <input type="text" placeholder="New Cocktail Glass..." value={newCocktailGlass} onChange={handleGlassChange}></input>
-//           <button type="submit" id="submit" name="Submit">Add</button>
-//         </form>    
-//     );
-// };
+    return(
+        <form onSubmit={handleSubmit}>
+          <input type="text" placeholder="New Cocktail Name..." value={newCocktailName} onChange={handleNameChange}></input>
+          <input type="text" placeholder="New Cocktail Category..." value={newCocktailCategory} onChange={handleCategoryChange}></input>
+          <input type="text" placeholder="New Cocktail Image..." value={newCocktailImage} onChange={handleImageChange}></input>
+          <input type="text" placeholder="New Cocktail Glass..." value={newCocktailGlass} onChange={handleGlassChange}></input>
+          <button type="submit" id="submit" name="Submit">Add</button>
+        </form>    
+    );
+};
 
-// export default AddForm;
+export default AddForm;
