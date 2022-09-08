@@ -10,15 +10,15 @@ const App = () => {
   const [reviews, setReviews] = useState([]);
 
   
-// useEffect(() => {
+useEffect(() => {
   
-// //get all cocktails to start
+//get all cocktails to start
 
-//   fetch('http://localhost:9292/cocktails')
-//     .then(response => response.json())
-//     .then(cocktailsData => { //console.log(cocktailsData)
-//       setCocktails(cocktailsData)
-//     })
+  fetch('http://localhost:9292/cocktails')
+    .then(response => response.json())
+    .then(cocktailsData => { //console.log(cocktailsData)
+      setCocktails(cocktailsData)
+    })
 
 // //get all reviews
 
