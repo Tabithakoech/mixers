@@ -17,14 +17,14 @@ const AddForm = ( {cocktails, setCocktails} ) => {
     setNewCocktailCategory(event.target.value);
   };
 
-//   function handleImageChange(event) {
-//     setNewCocktailImage(event.target.value);
-//   };
+  function handleImageChange(event) {
+    setNewCocktailImage(event.target.value);
+  };
 
   
-//   function handleGlassChange(event) {
-//     setNewCocktailGlass(event.target.value);
-//   };
+  function handleGlassChange(event) {
+    setNewCocktailGlass(event.target.value);
+  };
 
 //   //Handle Form Submit------------------
 
