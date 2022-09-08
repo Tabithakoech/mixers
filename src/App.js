@@ -45,28 +45,28 @@ useEffect(() => {
 
 
 
-//   return (
-//     <>
-//       <Router>
-//         <NavBar />
+  return (
+    <>
+      <Router>
+        <NavBar />
 
-//         <Routes>
-//             <Route 
-//             path='/' 
-//             element={ 
-//               <MainContainer 
-//                 cocktails={cocktails} 
-//                 setCocktails={setCocktails} 
-//                 deleteCocktailCard={deleteCocktailCard}
-//                 reviews={reviews}
-//                 setReviews={setReviews}
-//                 // getIndividualCocktailReviews={getIndividualCocktailReviews}
-//                 /> } />
-//             {/* <Route path='/mycocktails' element={ <MyCocktails />} /> */}
-//         </Routes>
-//       </Router>
-//     </>
-//   );
-// }
+        <Routes>
+            <Route 
+            path='/' 
+            element={ 
+              <MainContainer 
+                cocktails={cocktails} 
+                setCocktails={setCocktails} 
+                deleteCocktailCard={deleteCocktailCard}
+                reviews={reviews}
+                setReviews={setReviews}
+                // getIndividualCocktailReviews={getIndividualCocktailReviews}
+                /> } />
+            {/* <Route path='/mycocktails' element={ <MyCocktails />} /> */}
+        </Routes>
+      </Router>
+    </>
+  );
+}
 
-// export default App;
+export default App;
