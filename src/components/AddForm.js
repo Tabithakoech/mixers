@@ -26,15 +26,15 @@ const AddForm = ( {cocktails, setCocktails} ) => {
     setNewCocktailGlass(event.target.value);
   };
 
-//   //Handle Form Submit------------------
+  //Handle Form Submit------------------
 
-//   function handleSubmit(event) {
-//     event.preventDefault();
+  function handleSubmit(event) {
+    event.preventDefault();
 
-//     let newCocktail = { newCocktailName,
-//       newCocktailCategory,
-//       newCocktailImage,
-//       newCocktailGlass };
+    let newCocktail = { newCocktailName,
+      newCocktailCategory,
+      newCocktailImage,
+      newCocktailGlass };
 
 // console.log(newCocktail) //!-----WORKS!
 
