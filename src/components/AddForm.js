@@ -1,11 +1,11 @@
-// import { React, useState} from "react";
+import { React, useState} from "react";
 
 
-// const AddForm = ( {cocktails, setCocktails} ) => {
-//   const [newCocktailName, setNewCocktailName] = useState("");
-//   const [newCocktailCategory, setNewCocktailCategory] = useState("");
-//   const [newCocktailImage, setNewCocktailImage] = useState("");
-//   const [newCocktailGlass, setNewCocktailGlass] = useState("");
+const AddForm = ( {cocktails, setCocktails} ) => {
+  const [newCocktailName, setNewCocktailName] = useState("");
+  const [newCocktailCategory, setNewCocktailCategory] = useState("");
+  const [newCocktailImage, setNewCocktailImage] = useState("");
+  const [newCocktailGlass, setNewCocktailGlass] = useState("");
 
 //   //Handler Change Functions-----------
 
